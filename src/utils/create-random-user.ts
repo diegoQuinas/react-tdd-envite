@@ -13,3 +13,11 @@ export const createRandomDivisional = (div: string, num: number): Player[] => {
   }
   return result
 }
+
+export const createRandomDivisionals = (divList: string[], maxPlayers: number): Player[] => {
+  let result: Player[] = []
+  divList.forEach((element) => {
+    result.push(...createRandomDivisional(element, maxPlayers))
+  })
+  return result
+}
