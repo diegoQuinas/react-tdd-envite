@@ -31,7 +31,7 @@ afterEach(() => server.resetHandlers())
 describe("Main Page mount", () => {
   it("must display the main page title", async () => {
     expect(screen.getByText(/envite futbol/i)).toBeDefined();
-    await waitForElementToBeRemoved(screen.getByText(/cargando/i))
+    await waitForElementToBeRemoved(screen.getAllByText(/cargando/i))
 
   });
 });
