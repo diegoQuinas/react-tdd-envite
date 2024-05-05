@@ -6,7 +6,7 @@ import { describe, expect, it, beforeAll, beforeEach, afterAll } from 'vitest';
 
 import MainPage from "../components/main-page";
 import { Player } from "../types/Player";
-import { createRandomDivisional } from "./create-random-user";
+import { createRandomDivisional } from "../utils/create-random-user";
 
 
 const fakeDivisionalA: Player[] = createRandomDivisional("a", 30);
